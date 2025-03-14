@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>524</width>
+    <height>524</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>511</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(120, 99, 84);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>471</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Perpetua</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: #C4B8AE;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>261</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Perpetua Titling MT</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    background-color: #D6C8BE; /* Màu nền hợp với #C4B8AE */
+    border: 2px solid #8D735F; /* Viền màu tối hơn để tạo điểm nhấn */
+    border-radius: 12px; /* Bo góc */
+    padding: 10px;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center; /* Canh giữa tiêu đề */
+    padding: 5px;
+    background-color: #C4B8AE; /* Nền tiêu đề tiệp màu với label */
+    border-radius: 6px;
+}
+</string>
+    </property>
+    <property name="title">
+     <string>GUEST DETAILS:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>50</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #f5f0eb;  /* Màu be nhạt, hợp với theme tổng thể */
+    border: 2px solid #a08975;  /* Viền màu nâu nhạt */
+    border-radius: 8px;  /* Bo góc */
+    padding: 4px;  /* Thêm khoảng cách bên trong */
+    color: #4a3b2e;  /* Chữ màu nâu đậm cho dễ đọc */
+    font-size: 14px;  
+}
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>100</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #f5f0eb;  /* Màu be nhạt, hợp với theme tổng thể */
+    border: 2px solid #a08975;  /* Viền màu nâu nhạt */
+    border-radius: 8px;  /* Bo góc */
+    padding: 4px;  /* Thêm khoảng cách bên trong */
+    color: #4a3b2e;  /* Chữ màu nâu đậm cho dễ đọc */
+    font-size: 14px;  
+}
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>150</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #f5f0eb;  /* Màu be nhạt, hợp với theme tổng thể */
+    border: 2px solid #a08975;  /* Viền màu nâu nhạt */
+    border-radius: 8px;  /* Bo góc */
+    padding: 4px;  /* Thêm khoảng cách bên trong */
+    color: #4a3b2e;  /* Chữ màu nâu đậm cho dễ đọc */
+    font-size: 14px;  
+}
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_4">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>250</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #f5f0eb;  /* Màu be nhạt, hợp với theme tổng thể */
+    border: 2px solid #a08975;  /* Viền màu nâu nhạt */
+    border-radius: 8px;  /* Bo góc */
+    padding: 4px;  /* Thêm khoảng cách bên trong */
+    color: #4a3b2e;  /* Chữ màu nâu đậm cho dễ đọc */
+    font-size: 14px;  
+}
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background-color: #e1d6cc;  /* Màu nền be nhẹ hợp với tổng thể */
+    border-radius: 10px;  /* Bo góc mềm mại */
+    padding: 6px 10px;  /* Thêm khoảng cách để nhìn đẹp hơn */
+    color: #4a3b2e;  /* Chữ màu nâu đậm cho dễ đọc */
+    font-weight: bold;  /* Làm chữ rõ ràng hơn */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>FULL NAME:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background-color: #e1d6cc;  /* Màu nền be nhẹ hợp với tổng thể */
+    border-radius: 10px;  /* Bo góc mềm mại */
+    padding: 6px 10px;  /* Thêm khoảng cách để nhìn đẹp hơn */
+    color: #4a3b2e;  /* Chữ màu nâu đậm cho dễ đọc */
+    font-weight: bold;  /* Làm chữ rõ ràng hơn */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>PHONE NUMBER:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background-color: #e1d6cc;  /* Màu nền be nhẹ hợp với tổng thể */
+    border-radius: 10px;  /* Bo góc mềm mại */
+    padding: 6px 10px;  /* Thêm khoảng cách để nhìn đẹp hơn */
+    color: #4a3b2e;  /* Chữ màu nâu đậm cho dễ đọc */
+    font-weight: bold;  /* Làm chữ rõ ràng hơn */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>ARRIVAL:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background-color: #e1d6cc;  /* Màu nền be nhẹ hợp với tổng thể */
+    border-radius: 10px;  /* Bo góc mềm mại */
+    padding: 6px 10px;  /* Thêm khoảng cách để nhìn đẹp hơn */
+    color: #4a3b2e;  /* Chữ màu nâu đậm cho dễ đọc */
+    font-weight: bold;  /* Làm chữ rõ ràng hơn */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>ROOM NUMBER:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background-color: #e1d6cc;  /* Màu nền be nhẹ hợp với tổng thể */
+    border-radius: 10px;  /* Bo góc mềm mại */
+    padding: 6px 10px;  /* Thêm khoảng cách để nhìn đẹp hơn */
+    color: #4a3b2e;  /* Chữ màu nâu đậm cho dễ đọc */
+    font-weight: bold;  /* Làm chữ rõ ràng hơn */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>DEPARTURE:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_6">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>200</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #f5f0eb;  /* Màu be nhạt, hợp với theme tổng thể */
+    border: 2px solid #a08975;  /* Viền màu nâu nhạt */
+    border-radius: 8px;  /* Bo góc */
+    padding: 4px;  /* Thêm khoảng cách bên trong */
+    color: #4a3b2e;  /* Chữ màu nâu đậm cho dễ đọc */
+    font-size: 14px;  
+}
+</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>340</y>
+      <width>261</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Perpetua Titling MT</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    background-color: #D6C8BE; /* Màu nền hợp với #C4B8AE */
+    border: 2px solid #8D735F; /* Viền màu tối hơn để tạo điểm nhấn */
+    border-radius: 12px; /* Bo góc */
+    padding: 10px;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center; /* Canh giữa tiêu đề */
+    padding: 5px;
+    background-color: #C4B8AE; /* Nền tiêu đề tiệp màu với label */
+    border-radius: 6px;
+}
+</string>
+    </property>
+    <property name="title">
+     <string>Search:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>71</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background-color: #e1d6cc;  /* Màu nền be nhẹ hợp với tổng thể */
+    border-radius: 10px;  /* Bo góc mềm mại */
+    padding: 6px 10px;  /* Thêm khoảng cách để nhìn đẹp hơn */
+    color: #4a3b2e;  /* Chữ màu nâu đậm cho dễ đọc */
+    font-weight: bold;  /* Làm chữ rõ ràng hơn */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Search by phone number:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_5">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>30</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #e1d6cc;  /* Màu nền giống label */
+    border: 2px solid #c1a78e;  /* Viền nâu nhạt tạo điểm nhấn */
+    border-radius: 10px;  /* Bo góc mềm mại */
+    padding: 6px 10px;  /* Thêm khoảng trống để nhập dễ hơn */
+    color: #4a3b2e;  /* Chữ nâu đậm, dễ đọc */
+    font-size: 14px;  /* Chỉnh cỡ chữ để nhìn đẹp hơn */
+    selection-background-color: #b79d8b;  /* Màu khi bôi đen chữ */
+}
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>70</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Perpetua Titling MT</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #A48C74; /* Màu hợp với tông màu tổng thể */
+    color: white; /* Chữ màu trắng để dễ nhìn */
+    border-radius: 10px; /* Bo góc */
+    padding: 5px 10px; /* Canh lề cho đẹp */
+    border: 2px solid #8B6F55; /* Viền đậm hơn một chút */
+}
+
+QPushButton:hover {
+    background-color: #8B6F55; /* Đổi màu khi hover để có hiệu ứng */
+}
+
+QPushButton:pressed {
+    background-color: #786354; /* Khi nhấn thì màu đậm hơn */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Search</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>3844432_magnifier_search_zoom_icon.png</normaloff>3844432_magnifier_search_zoom_icon.png</iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>310</y>
+      <width>151</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Perpetua Titling MT</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    background-color: #D6C8BE; /* Màu nền hợp với #C4B8AE */
+    border: 2px solid #8D735F; /* Viền màu tối hơn để tạo điểm nhấn */
+    border-radius: 12px; /* Bo góc */
+    padding: 10px;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center; /* Canh giữa tiêu đề */
+    padding: 5px;
+    background-color: #C4B8AE; /* Nền tiêu đề tiệp màu với label */
+    border-radius: 6px;
+}
+</string>
+    </property>
+    <property name="title">
+     <string>ACTION:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Perpetua Titling MT</family>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #A48C74; /* Màu hợp với tông màu tổng thể */
+    color: white; /* Chữ màu trắng để dễ nhìn */
+    border-radius: 10px; /* Bo góc */
+    padding: 5px 10px; /* Canh lề cho đẹp */
+    border: 2px solid #8B6F55; /* Viền đậm hơn một chút */
+}
+
+QPushButton:hover {
+    background-color: #8B6F55; /* Đổi màu khi hover để có hiệu ứng */
+}
+
+QPushButton:pressed {
+    background-color: #786354; /* Khi nhấn thì màu đậm hơn */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Edit</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>8666681_edit_icon.png</normaloff>8666681_edit_icon.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Perpetua Titling MT</family>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #A48C74; /* Màu hợp với tông màu tổng thể */
+    color: white; /* Chữ màu trắng để dễ nhìn */
+    border-radius: 10px; /* Bo góc */
+    padding: 5px 10px; /* Canh lề cho đẹp */
+    border: 2px solid #8B6F55; /* Viền đậm hơn một chút */
+}
+
+QPushButton:hover {
+    background-color: #8B6F55; /* Đổi màu khi hover để có hiệu ứng */
+}
+
+QPushButton:pressed {
+    background-color: #786354; /* Khi nhấn thì màu đậm hơn */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Remove</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>3994424_cancel_close_delete_reject_remove_icon.png</normaloff>3994424_cancel_close_delete_reject_remove_icon.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Perpetua Titling MT</family>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #A48C74; /* Màu hợp với tông màu tổng thể */
+    color: white; /* Chữ màu trắng để dễ nhìn */
+    border-radius: 10px; /* Bo góc */
+    padding: 5px 10px; /* Canh lề cho đẹp */
+    border: 2px solid #8B6F55; /* Viền đậm hơn một chút */
+}
+
+QPushButton:hover {
+    background-color: #8B6F55; /* Đổi màu khi hover để có hiệu ứng */
+}
+
+QPushButton:pressed {
+    background-color: #786354; /* Khi nhấn thì màu đậm hơn */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>ADD</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>1564491_add_create_new_plus_icon.png</normaloff>1564491_add_create_new_plus_icon.png</iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>40</y>
+      <width>151</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Perpetua Titling MT</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    background-color: #D6C8BE; /* Màu nền hợp với #C4B8AE */
+    border: 2px solid #8D735F; /* Viền màu tối hơn để tạo điểm nhấn */
+    border-radius: 12px; /* Bo góc */
+    padding: 10px;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center; /* Canh giữa tiêu đề */
+    padding: 5px;
+    background-color: #C4B8AE; /* Nền tiêu đề tiệp màu với label */
+    border-radius: 6px;
+}
+</string>
+    </property>
+    <property name="title">
+     <string>GUEST DETAILS:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>151</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(205, 191, 182);</string>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>147</width>
+           <height>217</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>524</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
